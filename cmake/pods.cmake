@@ -332,7 +332,7 @@ macro(pods_config_search_paths)
         
         # hack to force cmake always create install and clean targets 
         install(FILES DESTINATION)
-        add_custom_target(tmp)
+        add_custom_target(tmp_${POD_NAME})
 
         set(__pods_setup true)
     endif(NOT DEFINED __pods_setup)
